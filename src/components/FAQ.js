@@ -1,6 +1,6 @@
 function Faq() {
   return (
-    <div className="flex flex-col mt-6 gap-3 justify-center items-center w-full">
+    <div className="flex flex-col mt-6 gap-3 justify-center items-center w-[80%] mx-auto">
       <div className="max-w-[28rem] flex justify-center flex-col">
         <div className="mb-2">
           <h2 className="text-2xl text-center mb-1">

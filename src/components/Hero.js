@@ -1,6 +1,6 @@
 function Hero() {
     return(
-        <div className="flex flex-col-reverse justify-center items-center lg:grid md:grid-cols-2 mt-4.5">
+        <div className="flex flex-col-reverse justify-center items-center lg:grid md:grid-cols-2 mt-4.5 w-[80%] mx-auto">
             <div className="flex gap-2 flex-col max-w-[28rem] mt-2">
                 <h1 className="text-3xl text-center lg:text-left lg:text-[2.7rem]">A Simple Bookmark Manager</h1>
                 <p className="text-GrayishBlue text-center lg:text-left text-[1rem]">A clean and simple interface to organize your favourite websites. Open a new 

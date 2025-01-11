@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center w-[80%] mx-auto">
       <img src="./images/logo-bookmark.svg" />
       {/* For Large Screens */}
       <div className="hidden lg:flex gap-2.5">

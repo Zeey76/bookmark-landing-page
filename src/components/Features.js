@@ -1,6 +1,6 @@
 function Features() {
   return (
-    <div className="flex flex-col mt-6 gap-3 justify-center items-center">
+    <div className="flex flex-col mt-6 gap-3 justify-center items-center w-[80%] mx-auto">
       <div className="max-w-[30rem]">
         <h2 className="text-2xl text-center mb-1">Features</h2>
         <p className="text-GrayishBlue text-center">
