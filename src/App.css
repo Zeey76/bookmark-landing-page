@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+hr {
+    height: 0.5px;
+    background-color: hsl(229, 8%, 60%);
+    border: none;
+    width: 100%;
+}
+
+h3 {
+    color: hsl(229, 8%, 60%);
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
