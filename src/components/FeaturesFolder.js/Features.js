@@ -8,7 +8,7 @@ function Features() {
   return (
     <div className="flex flex-col mt-6 gap-3 justify-center items-center w-[80%] mx-auto">
       <FeaturesHeading/>
-      <Tabs setActiveTab={setActiveTab}/>
+      <Tabs setActiveTab={setActiveTab} activeTab={activeTab}/>
       <div className="w-full flex justify-center items-center">
         {activeTab === "Tab1" && <Feature
           tab={1}
