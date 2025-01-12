@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Features from './components/Features';
+import Features from './components/FeaturesFolder.js/Features';
 import Extensions from './components/Extensions';
 import Faq from './components/FAQ';
 import TopFooter from './components/Footer/TopFooter';
