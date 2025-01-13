@@ -21,6 +21,10 @@ hr {
   left: 0;
   right: 0;
 }
+
+button {
+  cursor: pointer;
+}
 @media (max-width: 360px) {
   .hero-buttons {
     flex-wrap: wrap;
