@@ -20,9 +20,9 @@ export default function BottomFooter() {
             </g>
           </svg>
 
-          <button className="uppercase text-white">Features</button>
-          <button className="uppercase text-white">Pricing</button>
-          <button className="uppercase text-white">Contact</button>
+          <button className="uppercase text-neutral-200">Features</button>
+          <button className="uppercase text-neutral-200">Pricing</button>
+          <button className="uppercase text-neutral-200">Contact</button>
         </div>
 
         <div className="flex gap-2">

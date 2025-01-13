@@ -10,10 +10,10 @@ function Hero() {
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
         <div className="hero-buttons flex gap-1.5 justify-center lg:justify-start ">
-          <button className="bg-SoftBlue w-9 text-sm pt-[0.8rem] pb-[0.8rem] font-semibold shadow-md text-white rounded-sm">
+          <button className="bg-SoftBlue w-9 text-sm pt-[0.7rem] pb-[0.7rem] font-semibold shadow-md text-white rounded-sm border-2 border-transparent hover:bg-white hover:text-SoftBlue hover:border-SoftBlue">
             Get it on Chrome
           </button>
-          <button className="bg-neutral-100 font-semibold text-sm text-VeryDarkBlue shadow-md w-9 pt-[0.8rem] pb-[0.8rem] rounded-sm">
+          <button className="bg-neutral-100 font-semibold text-sm text-VeryDarkBlue shadow-md w-9 pt-[0.7rem] pb-[0.7rem] rounded-sm border-2 border-transparent hover:bg-white  hover:border-VeryDarkBlue">
             Get it on Firefox
           </button>
         </div>

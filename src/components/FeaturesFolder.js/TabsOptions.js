@@ -6,10 +6,10 @@ export default function Tabs({ setActiveTab, activeTab }) {
         <div className="relative w-full">
           <h3
             className={`tab pb-[1.4rem] pt-[1.4rem] text-lg text-gray-500 border-b-[1px] border-GrayishBlue text-center ${
-              activeTab === "Tab1" ? "active font-bold" : "font-semibold"
+              activeTab === "Tab1" ? "active font-bold" : "font-medium"
             }`}
           >
-            <button onClick={() => setActiveTab("Tab1")}>
+            <button onClick={() => setActiveTab("Tab1")} className="hover:text-SoftRed">
               Simple Bookmarking
             </button>
           </h3>
@@ -17,10 +17,10 @@ export default function Tabs({ setActiveTab, activeTab }) {
         <div className="relative w-full">
           <h3
             className={`tab pb-[1.4rem] pt-[1.4rem] text-lg text-gray-500 border-b-[1px] border-GrayishBlue text-center ${
-              activeTab === "Tab2" ? "active font-bold" : "font-semibold"
+              activeTab === "Tab2" ? "active font-bold" : "font-medium"
             }`}
           >
-            <button onClick={() => setActiveTab("Tab2")}>
+            <button onClick={() => setActiveTab("Tab2")} className="hover:text-SoftRed">
               Speedy Searching
             </button>
           </h3>
@@ -28,10 +28,10 @@ export default function Tabs({ setActiveTab, activeTab }) {
         <div className="relative w-full">
           <h3
             className={`tab pb-[1.4rem] pt-[1.4rem] text-lg text-gray-500 border-b-[1px] border-GrayishBlue text-center  ${
-              activeTab === "Tab3" ? "active font-bold" : "font-semibold"
+              activeTab === "Tab3" ? "active font-bold" : "font-medium"
             }`}
           >
-            <button onClick={() => setActiveTab("Tab3")}>Easy Sharing</button>
+            <button onClick={() => setActiveTab("Tab3")} className="hover:text-SoftRed">Easy Sharing</button>
           </h3>
         </div>
       </div>
