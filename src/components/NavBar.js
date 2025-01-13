@@ -1,8 +1,10 @@
 import { useState } from "react";
-export default function NavBar({setShowNavBar, showNavBar}) {
+export default function NavBar({ setShowNavBar, showNavBar }) {
   const [active, setActive] = useState("login");
   return (
-    <div className={`absolute flex flex-col items-center bg-VeryDarkBlue opacity-95 p-2.5 z-50 w-full h-screen max-w-[30rem] right-0 top-0 lg:hidden`}>
+    <div
+      className={`absolute flex flex-col items-center bg-VeryDarkBlue opacity-95 p-2.5 z-50 w-full h-screen max-w-[30rem] right-0 top-0 lg:hidden`}
+    >
       <div className="flex justify-between items-center pb-2 self-stretch">
         <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
@@ -21,7 +23,7 @@ export default function NavBar({setShowNavBar, showNavBar}) {
           </g>
         </svg>
         <button onClick={() => setShowNavBar(false)}>
-        <img src="./images/icon-close.svg" alt="" />
+          <img src="./images/icon-close.svg" alt="" />
         </button>
       </div>
       <hr />

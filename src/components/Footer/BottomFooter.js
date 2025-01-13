@@ -2,7 +2,7 @@ export default function BottomFooter() {
   return (
     <div className="bg-VeryDarkBlue p-2">
       <div className="flex flex-col lg:flex-row gap-3 justify-between items-center w-[80%] mx-auto">
-        <div className="flex flex-col lg:flex-row gap-3">
+        <div className="flex flex-col md:flex-row gap-3">
           <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd">
               <path
