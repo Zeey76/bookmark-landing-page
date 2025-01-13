@@ -134,7 +134,7 @@ function Faq() {
           {openPanel === 4 && <FaqContent />}
           <hr />
         </div>
-        <button className="self-center mt-3 bg-SoftBlue w-8 rounded-md pt-[0.8rem] pb-[0.8rem] text-sm font-medium text-white shadow-md">
+        <button className="self-center mt-3 bg-SoftBlue w-7 rounded-md pt-[0.8rem] pb-[0.8rem] text-sm font-medium text-white shadow-md">
           More Info
         </button>
       </div>
