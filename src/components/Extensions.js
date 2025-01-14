@@ -12,11 +12,15 @@ function Extensions() {
         <div className="flex flex-col md:flex-row md:flex-wrap gap-1.5 justify-center items-center">
           <div className="shadow-lg flex gap-2 flex-col relative rounded-md p-1.5 items-center">
             <img src="./images/logo-chrome.svg" className="w-5" alt="" />
-            <div> 
+            <div>
               <p className="mb-0.5 text-center">Add to Chrome</p>
               <p className="text-center">Minimum version 62</p>
             </div>
-            <img src="./images/bg-dots.svg" alt="" className="absolute bottom-5.5"/>
+            <img
+              src="./images/bg-dots.svg"
+              alt=""
+              className="absolute bottom-5.5"
+            />
             <button className="bg-SoftBlue mt-[1.3rem] w-[13rem] pt-0.5 pb-0.5 text-white rounded-md border-2 border-transparent hover:bg-white hover:text-SoftBlue hover:border-SoftBlue">
               Add & Install Extension
             </button>
@@ -27,7 +31,11 @@ function Extensions() {
               <p className="mb-0.5 text-center">Add to Firefox</p>
               <p className="text-center">Minimum version 55</p>
             </div>
-            <img src="./images/bg-dots.svg" alt="" className="absolute bottom-5.5"/>
+            <img
+              src="./images/bg-dots.svg"
+              alt=""
+              className="absolute bottom-5.5"
+            />
             <button className="bg-SoftBlue w-[13rem] mt-[1.3rem] pt-0.5 pb-0.5 text-white rounded-md border-2 border-transparent hover:bg-white hover:text-SoftBlue hover:border-SoftBlue">
               Add & Install Extension
             </button>
@@ -38,7 +46,11 @@ function Extensions() {
               <p className="mb-0.5 text-center">Add to Chrome</p>
               <p className="text-center">Minimum version 46</p>
             </div>
-            <img src="./images/bg-dots.svg" alt="" className="absolute bottom-5.5"/>
+            <img
+              src="./images/bg-dots.svg"
+              alt=""
+              className="absolute bottom-5.5"
+            />
             <button className="bg-SoftBlue w-[13rem] mt-[1.3rem] pt-0.5 pb-0.5 text-white rounded-md border-2 border-transparent hover:bg-white hover:text-SoftBlue hover:border-SoftBlue">
               Add & Install Extension
             </button>

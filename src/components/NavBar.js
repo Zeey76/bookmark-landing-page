@@ -1,6 +1,8 @@
-import { useState } from "react";
-export default function NavBar({ setShowNavBar, showNavBar }) {
-  const [active, setActive] = useState("login");
+import useActiveBar from "./CustomHooks/useActiveBar";
+
+export default function NavBar({ setShowNavBar }) {
+  const { active, handleActive } = useActiveBar();
+  const navItems = ["features", "pricing", "contact", "login"];
   return (
     <div
       className={`absolute flex flex-col items-center bg-VeryDarkBlue opacity-95 p-2.5 z-50 w-full h-screen max-w-[30rem] right-0 top-0 lg:hidden`}
@@ -28,49 +30,23 @@ export default function NavBar({ setShowNavBar, showNavBar }) {
       </div>
       <hr />
       <div className="w-full flex flex-col items-center flex-1">
-        <h3 className="pt-1 pb-1 w-full">
-          <button
-            className={`uppercase pt-0.5 pb-0.5 w-full text-white text-xl ${
-              active === "features" ? "border-2 border-white rounded-md" : ""
-            }`}
-            onClick={() => setActive("features")}
-          >
-            Features
-          </button>
-        </h3>
-        <hr />
-        <h3 className="pt-1 pb-1 w-full">
-          <button
-            className={`uppercase pt-0.5 pb-0.5 w-full text-white text-xl ${
-              active === "pricing" ? "border-2 border-white rounded-md" : ""
-            }`}
-            onClick={() => setActive("pricing")}
-          >
-            Pricing
-          </button>
-        </h3>
-        <hr />
-        <h3 className="pt-1 pb-1 w-full">
-          <button
-            className={`uppercase pt-0.5 pb-0.5 w-full text-white text-xl ${
-              active === "contact" ? "border-2 border-white" : ""
-            }`}
-            onClick={() => setActive("contact")}
-          >
-            Contact
-          </button>
-        </h3>
-        <hr />
-        <h3 className="pt-1 pb-1 w-full">
-          <button
-            className={`uppercase pt-0.5 pb-0.5 w-full text-white text-xl ${
-              active === "login" ? "border-2 border-white rounded-md" : ""
-            }`}
-            onClick={() => setActive("login")}
-          >
-            Login
-          </button>
-        </h3>
+        {navItems.map((item, index) => {
+          return (
+            <>
+              <h3 className="pt-1 pb-1 w-full">
+                <button
+                  className={`uppercase pt-0.5 pb-0.5 w-full text-white text-xl ${
+                    active === index ? "border-2 border-white rounded-md" : ""
+                  }`}
+                  onClick={() => handleActive(index)}
+                >
+                  {item}
+                </button>
+              </h3>
+              <hr />
+            </>
+          );
+        })}
       </div>
       <div className="flex gap-2">
         <button>
