@@ -1,4 +1,4 @@
-export default function Feature({ title, tab, content }) {
+export default function FeatureContent({ title, tab, content }) {
   return (
     <div className="gap-5 flex flex-col lg:flex-row justify-between items-center">
       <div className="lg:max-w-[22rem] ">
