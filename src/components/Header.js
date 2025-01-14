@@ -1,7 +1,7 @@
-import useActiveBar from "./CustomHooks/useActiveBar";
+import useActive from "./CustomHooks/useActive";
 
 function Header({ setShowNavBar }) {
-  const { active, handleActive } = useActiveBar();
+  const { active, handleActive } = useActive();
   const navItems = ["features", "pricing", "contact", "login"];
   return (
     <div className="flex justify-between pt-2.5 items-center w-[80%] mx-auto">
@@ -10,7 +10,7 @@ function Header({ setShowNavBar }) {
       <div className="hidden lg:flex ">
         {navItems.map((item, index) => {
           return (
-            <button
+            <button key={item}
               className={`uppercase pt-[0.6rem] pb-[0.6rem] rounded-md w-7 text-VeryDarkBlue font-normal hover:text-SoftRed ${
                 active === index
                   ? "bg-SoftRed shadow-md text-white hover:bg-white border-2 border-SoftRed"

@@ -1,7 +1,7 @@
-import useActiveBar from "./CustomHooks/useActiveBar";
+import useActive from "./CustomHooks/useActive";
 
 export default function NavBar({ setShowNavBar }) {
-  const { active, handleActive } = useActiveBar();
+  const { active, handleActive } = useActive();
   const navItems = ["features", "pricing", "contact", "login"];
   return (
     <div

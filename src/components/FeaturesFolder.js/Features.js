@@ -1,16 +1,16 @@
-import { useState } from "react";
 import FeatureContent from "./feature";
 import FeaturesHeading from "./FeaturesHeading";
 import Tabs from "./TabsOptions";
+import useActive from "../CustomHooks/useActive";
 
 function Features() {
-  const [activeTab, setActiveTab] = useState(0);
+  const { active, handleActive } = useActive();
   return (
     <div className="flex flex-col mt-6 gap-3 justify-center items-center w-[80%] mx-auto">
       <FeaturesHeading />
-      <Tabs setActiveTab={setActiveTab} activeTab={activeTab} />
+      <Tabs handleActive={handleActive} active={active} />
       <div className="w-full flex justify-center items-center">
-        {activeTab === 0 && (
+        {active === 0 && (
           <FeatureContent
             tab={1}
             title={"Bookmark in one click"}
@@ -19,7 +19,7 @@ function Features() {
             }
           />
         )}
-        {activeTab === 1 && (
+        {active === 1 && (
           <FeatureContent
             tab={2}
             title={"Intelligent search"}
@@ -28,7 +28,7 @@ function Features() {
             }
           />
         )}
-        {activeTab === 2 && (
+        {active === 2 && (
           <FeatureContent
             tab={3}
             title={"Share your bookmarks"}
