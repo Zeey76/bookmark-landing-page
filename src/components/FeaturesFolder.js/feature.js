@@ -5,7 +5,9 @@ export default function FeatureContent({ title, tab, content }) {
         <img src={`./images/illustration-features-tab-${tab}.svg`} alt="" />
       </div>
       <div className="flex gap-1 flex-col max-w-[22rem] mt-[-2rem]">
-        <h1 className="text-3xl text-center lg:text-left font-bold text-VeryDarkBlue">{title}</h1>
+        <h1 className="text-3xl text-center lg:text-left font-bold text-VeryDarkBlue">
+          {title}
+        </h1>
         <p className="text-GrayishBlue text-center lg:text-left text-[1rem]">
           {content}
         </p>

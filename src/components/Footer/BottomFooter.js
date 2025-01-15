@@ -22,7 +22,10 @@ export default function BottomFooter() {
           </svg>
           {buttons.map((button) => {
             return (
-              <button key={button} className="uppercase text-neutral-200 hover:text-SoftRed">
+              <button
+                key={button}
+                className="uppercase text-neutral-200 hover:text-SoftRed"
+              >
                 {button}
               </button>
             );
