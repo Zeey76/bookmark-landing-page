@@ -12,7 +12,7 @@ export default function FeatureContent({ title, tab, content }) {
           {content}
         </p>
         <div className="flex gap-1.5 justify-center lg:justify-start">
-          <button className="bg-SoftBlue w-8 pt-0.5 pb-0.5 text-white rounded-md shadow-md">
+          <button className="bg-SoftBlue w-8 pt-0.5 pb-0.5 text-white rounded-md shadow-md border-2 border-transparent hover:bg-white hover:text-SoftBlue hover:border-SoftBlue">
             More Info
           </button>
         </div>
