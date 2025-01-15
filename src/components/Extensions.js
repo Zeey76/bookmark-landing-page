@@ -28,7 +28,9 @@ function Extension({ version, extension }) {
     >
       <img src={`./images/logo-${extension}.svg`} className="w-5" alt="" />
       <div>
-        <p className="mb-0.5 text-center">Add to {extension}</p>
+        <p className="mb-0.5 text-center">
+          Add to {extension.charAt(0).toUpperCase() + extension.slice(1)}
+        </p>
         <p className="text-center">Minimum version {version}</p>
       </div>
       <img src="./images/bg-dots.svg" alt="" className="absolute bottom-5.5" />

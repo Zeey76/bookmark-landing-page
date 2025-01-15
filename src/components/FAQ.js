@@ -20,7 +20,10 @@ function Faq() {
         </div>
         <div>
           <hr />
-          <div className="flex justify-between items-center mt-1 mb-1 cursor-pointer"  onClick={() => handlePanel(1)}>
+          <div
+            className="flex justify-between items-center mt-1 mb-1 cursor-pointer"
+            onClick={() => handlePanel(1)}
+          >
             <h4 className="font-semibold text-VeryDarkBlue text-[1.1rem] hover:text-SoftRed w-full">
               What is a Bookmark?
             </h4>
@@ -30,26 +33,17 @@ function Faq() {
                 {openPanel !== 1 ? (
                   <img src="./images/icon-arrow.svg" alt="" />
                 ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="rotate-180"
-                    width="18"
-                    height="12"
-                  >
-                    <path
-                      fill="none"
-                      stroke="hsl(0, 94%, 66%)"
-                      stroke-width="3"
-                      d="M1 1l8 8 8-8"
-                    />
-                  </svg>
+                  <ArrowUp />
                 )}
               </button>
             </div>
           </div>
           {openPanel === 1 && <FaqContent />}
           <hr />
-          <div className="flex justify-between items-center mt-1 mb-1 cursor-pointer"  onClick={() => handlePanel(2)}>
+          <div
+            className="flex justify-between items-center mt-1 mb-1 cursor-pointer"
+            onClick={() => handlePanel(2)}
+          >
             <h4 className="font-semibold text-VeryDarkBlue text-[1.1rem] hover:text-SoftRed w-full">
               How can i request a new browser?
             </h4>
@@ -58,26 +52,17 @@ function Faq() {
                 {openPanel !== 2 ? (
                   <img src="./images/icon-arrow.svg" alt="" />
                 ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="rotate-180"
-                    width="18"
-                    height="12"
-                  >
-                    <path
-                      fill="none"
-                      stroke="hsl(0, 94%, 66%)"
-                      stroke-width="3"
-                      d="M1 1l8 8 8-8"
-                    />
-                  </svg>
+                  <ArrowUp />
                 )}
               </button>
             </div>
           </div>
           {openPanel === 2 && <FaqContent />}
           <hr />
-          <div className="flex justify-between items-center mt-1 mb-1 cursor-pointer"  onClick={() => handlePanel(3)}>
+          <div
+            className="flex justify-between items-center mt-1 mb-1 cursor-pointer"
+            onClick={() => handlePanel(3)}
+          >
             <h4 className="font-semibold text-VeryDarkBlue text-[1.1rem] hover:text-SoftRed w-full">
               Is there a mobile app?
             </h4>
@@ -86,26 +71,17 @@ function Faq() {
                 {openPanel !== 3 ? (
                   <img src="./images/icon-arrow.svg" alt="" />
                 ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="rotate-180"
-                    width="18"
-                    height="12"
-                  >
-                    <path
-                      fill="none"
-                      stroke="hsl(0, 94%, 66%)"
-                      stroke-width="3"
-                      d="M1 1l8 8 8-8"
-                    />
-                  </svg>
+                  <ArrowUp />
                 )}
               </button>
             </div>
           </div>
           {openPanel === 3 && <FaqContent />}
           <hr />
-          <div className="flex justify-between items-center mt-1 mb-1 cursor-pointer"  onClick={() => handlePanel(4)}>
+          <div
+            className="flex justify-between items-center mt-1 mb-1 cursor-pointer"
+            onClick={() => handlePanel(4)}
+          >
             <h4 className="font-semibold text-VeryDarkBlue text-[1.1rem] hover:text-SoftRed w-full">
               What about other Chromium browsers
             </h4>
@@ -114,19 +90,7 @@ function Faq() {
                 {openPanel !== 4 ? (
                   <img src="./images/icon-arrow.svg" alt="" />
                 ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="rotate-180"
-                    width="18"
-                    height="12"
-                  >
-                    <path
-                      fill="none"
-                      stroke="hsl(0, 94%, 66%)"
-                      stroke-width="3"
-                      d="M1 1l8 8 8-8"
-                    />
-                  </svg>
+                  <ArrowUp />
                 )}
               </button>
             </div>
@@ -139,6 +103,24 @@ function Faq() {
         </button>
       </div>
     </div>
+  );
+}
+
+function ArrowUp() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="rotate-180"
+      width="18"
+      height="12"
+    >
+      <path
+        fill="none"
+        stroke="hsl(0, 94%, 66%)"
+        stroke-width="3"
+        d="M1 1l8 8 8-8"
+      />
+    </svg>
   );
 }
 export default Faq;
