@@ -6,7 +6,6 @@ function Header({ setShowNavBar }) {
   return (
     <div className="flex justify-between pt-2.5 items-center w-[80%] mx-auto">
       <img src="./images/logo-bookmark.svg" alt="" />
-      {/* For Large Screens */}
       <div className="hidden lg:flex ">
         {navItems.map((item, index) => {
           return (
